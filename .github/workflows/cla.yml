@@ -1,0 +1,9 @@
+name: Scala CLA
+on: [pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: scala/cla-verification-action@main
+      with:
+        author: ${{ github.event.pull_request.user.login }}
