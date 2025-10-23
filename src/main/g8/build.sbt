@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-val scala3Version = "3.7.0"
+val scala3Version = "3.7.3"
 
 lazy val root = project
   .in(file("."))
@@ -32,8 +32,8 @@ lazy val $name;format="lower"$ = crossProject(JSPlatform, JVMPlatform)
         .withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("$organization$.$name;format="lower"$")))
     },
     libraryDependencies ++= Seq(
-      "org.scala-js" %%% "scalajs-dom" % "2.8.0",
-      "com.raquo"    %%% "laminar"     % "17.2.0",
+      "org.scala-js" %%% "scalajs-dom" % "2.8.1",
+      "com.raquo"    %%% "laminar"     % "17.2.1",
       "org.felher"   %%% "beminar"     % "1.1.0"
     )
   )
